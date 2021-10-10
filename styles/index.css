@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+  .nav__link:not(.active), .dropdown .dropbtn {
+    display: none;
+  }
+
+  .icon {
+    float: right;
+    display: block;
+    font-size:24px;
+    padding: 10px 16px;
+    color: #f2f2f2;
+  }
+}

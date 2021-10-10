@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/main-styles.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <title>About Selma</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav" id="drop-nav">
+            <a class="nav__link home" href="../index.html">Home</a>
+            <a class="nav__link active" href="../pages/about.html">About Selma</a>
+            <div class="dropdown">
+            <button class="dropbtn">Photo Albums 
+                <i class="far fa-caret-square-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="dropdown__link" href="../pages/photo-album1.html">Kitten</a>
+                <a class="dropdown__link" href="../pages/photo-album2.html">Outside</a>
+            </div>
+            </div> 
+            <a class="icon" onclick="dropNav()"><i class="fas fa-bars"></i></a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <h2 class="title">About Selma</h2>
+        <p class="text">Selma is a Ragdoll cat born in 2011. There is a lot we don't know about her first years of life, since we adopted her when she was 4 years old. 
+        What we do know is that she is a very social cat that loves to be around people, but gets grumpy as soon as she sees another cat. 
+        She sleeps most of the time but when she doesn't, she likes to play with her favourite "toy" Snören who is just a piece of string. 
+        She likes to carry him around while meowing intensely. She also likes to play with her toy mouses (she has a LOT of them) and when she 
+        thinks we're not looking she tries to eat all our phone-chargers. She is very fluffy and soft and loves all the scritches!</p>
+        <img class="main-photo" src="../images/about-1.jpg" alt="Selma showing off her paws" width="600px">
+    </main>
+
+
+    <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav";
+        }
+      }
+    </script>
+</body>
+</html>

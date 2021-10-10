@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/main-styles.css">
+    <link rel="stylesheet" href="../styles/photo-album.css">
+    <title>Photo album: Outside</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav" id="drop-nav">
+            <a class="nav__link home" href="../index.html">Home</a>
+            <a class="nav__link" href="../pages/about.html">About Selma</a>
+            <div class="dropdown">
+            <button class="dropbtn">Photo Albums 
+                <i class="far fa-caret-square-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="dropdown__link" href="../pages/photo-album1.html">Kitten</a>
+                <a class="dropdown__link" href="../pages/photo-album2.html">Outside</a>
+            </div>
+            </div> 
+            <a class="icon" onclick="dropNav()"><i class="fas fa-bars"></i></a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <h2 class="title">Photos of Selma outside</h2>
+        <p class="text">Selma is an indoor cat, but she likes to go out in her harness and explore the outdoors sometimes. 
+        Here are a few pictures of her outside!</p>
+        <img class="photo" src="../images/outside1.jpg" alt="Selma sitting outside, looking up" width="600px">
+        <img class="photo" src="../images/outside2.jpg" alt="Closeup of Selma's face with out-of-focus greenery in the background" width="600px">
+        <img class="photo" src="../images/outside3.jpg" alt="Selma looking startled as she is walking down a ramp outside" width="600px">
+        <img class="photo" src="../images/outside4.jpg" alt="Selma laying on a big rock, enjoying the sun" width="600px">
+        <img class="photo" src="../images/outside5.jpg" alt="Selma sitting among some heather in the woods" width="600px">
+        <img class="photo" src="../images/outside6.jpg" alt="Selma walking along a path next to a building" width="600px">
+        <img class="photo" src="../images/outside7.jpg" alt="Selma walking among fallen leaves in a park" width="600px">
+    </main>
+
+
+    <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav";
+        }
+      }
+    </script>
+</body>
+</html>
