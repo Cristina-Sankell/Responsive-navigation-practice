@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-styles.css">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
     <title>My Cat</title>
 </head>
 
@@ -32,7 +33,11 @@
         <h2 class="title">My Cat</h2>
         <p class="text">This is my cat. Her name is Selma but she also has about a trillion nicknames. 
         <br> Check out the menu above to read more about her and see some photos!</p>
-        <img class="main-photo" src="images/Selma.jpg" alt="My cat Selma" width="600px">
+        <picture class="main-photo">
+          <source type="image/webp" srcset="images/Selma.webp" alt="My cat Selma" width="600px">
+          <source type="image/jpeg" srcset="images/Selma.jpg" alt="My cat Selma" width="600px">
+          <img class="main-photo" src="images/Selma.jpg" alt="My cat Selma" width="600px">
+        </picture>
     </main>
 
 

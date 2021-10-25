@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main-styles.css">
     <link rel="stylesheet" href="../styles/photo-album.css">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
     <title>Photo album: Sleeping</title>
 </head>
 
@@ -31,11 +32,31 @@
     <main class="main">
         <h2 class="title">Selma sleeping</h2>
         <p class="text">Here are some photos of Selma when she is snoozing, which is what she does 90% of the time.</p>
-        <img class="photo" src="../images/sleeping-1.jpg" alt="Selma sleeping" width="600px">
-        <img class="photo" src="../images/sleeping-2.png" alt="Selma sleeping" width="600px">
-        <img class="photo" src="../images/sleeping-3.jpg" alt="Selma sleeping" width="600px">
-        <img class="photo" src="../images/sleeping-4.png" alt="Selma sleeping" width="600px">
-        <img class="photo" src="../images/sleeping-5.jpg" alt="Selma sleeping" width="600px">
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/sleeping-1.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/sleeping-1.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/sleeping-1.jpg" alt="Selma sleeping" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/sleeping-2.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/sleeping-2.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/sleeping-2.png" alt="Selma sleeping" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/sleeping-3.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/sleeping-3.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/sleeping-3.png" alt="Selma sleeping" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/sleeping-4.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/sleeping-4.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/sleeping-4.png" alt="Selma sleeping" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/sleeping-5.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/sleeping-5.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/sleeping-5.png" alt="Selma sleeping" width="600px">
+        </picture>
     </main>
 
 

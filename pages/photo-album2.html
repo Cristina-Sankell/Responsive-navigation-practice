@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main-styles.css">
     <link rel="stylesheet" href="../styles/photo-album.css">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
     <title>Photo album: Outside</title>
 </head>
 
@@ -32,13 +33,41 @@
         <h2 class="title">Selma outside</h2>
         <p class="text">Selma is an indoor cat, but she likes to go out in her harness and explore the outdoors sometimes. 
         Here are a few pictures of her outside!</p>
-        <img class="photo" src="../images/outside1.jpg" alt="Selma sitting outside, looking up" width="600px">
-        <img class="photo" src="../images/outside2.jpg" alt="Closeup of Selma's face with out-of-focus greenery in the background" width="600px">
-        <img class="photo" src="../images/outside3.jpg" alt="Selma looking startled as she is walking down a ramp outside" width="600px">
-        <img class="photo" src="../images/outside4.jpg" alt="Selma laying on a big rock, enjoying the sun" width="600px">
-        <img class="photo" src="../images/outside5.jpg" alt="Selma sitting among some heather in the woods" width="600px">
-        <img class="photo" src="../images/outside6.jpg" alt="Selma walking along a path next to a building" width="600px">
-        <img class="photo" src="../images/outside7.jpg" alt="Selma walking among fallen leaves in a park" width="600px">
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside1.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside1.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside1.jpg" alt="Selma sitting outside, looking up" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside2.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside2.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside2.jpg" alt="Closeup of Selma's face with out-of-focus greenery in the background" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside3.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside3.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside3.jpg" alt="Selma looking startled as she is walking down a ramp outside" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside4.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside4.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside4.jpg" alt="Selma laying on a big rock, enjoying the sun" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside5.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside5.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside5.jpg" alt="Selma sitting among some heather in the woods" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside6.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside6.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside6.jpg" alt="Selma walking along a path next to a building" width="600px">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="../images/outside7.webp" alt="Selma sleeping" width="600px">
+          <source type="image/jpeg" srcset="../images/outside7.jpg" alt="Selma sleeping" width="600px">
+          <img class="photo" src="../images/outside7.jpg" alt="Selma walking among fallen leaves in a park" width="600px">
+        </picture>
     </main>
 
 

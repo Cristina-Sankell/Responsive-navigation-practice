@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main-styles.css">
     <link rel="stylesheet" href="../styles/about.css">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
     <title>About Selma</title>
 </head>
 
@@ -35,7 +36,11 @@
         She sleeps most of the time but when she doesn't, she likes to play with her favourite "toy" Snören who is just a piece of string. 
         She likes to carry him around while meowing intensely. She also likes to play with her toy mouses (she has a LOT of them) and when she 
         thinks we're not looking she tries to eat all our phone-chargers. She is very fluffy and soft and loves all the scritches!</p>
-        <img class="main-photo" src="../images/about-1.jpg" alt="Selma showing off her paws" width="600px">
+        <picture class="main-photo">
+          <source type="image/webp" srcset="../images/about-1.webp" alt="Selma showing off her paws" width="600px">
+          <source type="image/jpeg" srcset="../images/about-1.jpg" alt="Selma showing off her paws" width="600px">
+          <img class="main-photo" src="../images/about-1.jpg" alt="Selma showing off her paws" width="600px">
+        </picture>
     </main>
 
 
